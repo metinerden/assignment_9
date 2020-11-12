@@ -1,0 +1,22 @@
+package assignment_9;
+
+public class question9_SwapNames {
+
+	public static void main(String[] args) {
+
+
+		String input= "mike_tyson@gmail.com";
+		String name="";
+		String lastName="";
+		String output="";
+		
+		name=input.substring(0, input.indexOf("_"));
+		lastName=input.substring(input.indexOf("_")+1, input.indexOf("@"));
+		output=input.replace(lastName, name);
+		output=output.replaceFirst(name, lastName);
+		System.out.println(output);
+		
+
+	}
+
+}
